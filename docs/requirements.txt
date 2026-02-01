@@ -1,0 +1,13 @@
+sphinx
+numpydoc
+pandas
+polars
+altair
+numpy
+pydata_sphinx_theme
+sphinx-copybutton
+sphinxext_altair.altairplot
+sphinx.ext.autodoc
+sphinx.ext.autosectionlabel
+sphinx_togglebutton
+urllib3<2

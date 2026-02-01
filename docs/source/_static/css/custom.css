@@ -1,0 +1,154 @@
+/*
+rem units based on 16px base html size
+
+    10px = 0.625rem
+    12px = 0.75rem
+    14px = 0.875rem
+    16px = 1rem (base)
+    18px = 1.125rem
+    20px = 1.25rem
+    24px = 1.5rem
+    30px = 1.875rem
+    32px = 2rem
+
+*/
+
+@font-face {
+     font-family: "Kingofthieves";
+     src: url(../fonts/Kingofthieves-v6mL.ttf);
+}
+
+.keys {
+    font-family: "Kingofthieves";
+	font-size: 60px;
+	color: #ff073a;
+    text-shadow: 0 0 3px #ccff02;
+} 
+
+.toggle .header {
+    display: block;
+    clear: both;
+}
+
+.toggle .header:after {
+    content: "▶";
+}
+
+.toggle .header.open:after {
+    content: "▼";
+}
+
+div.topic[data-theme="light"] {
+    background-color: #effcf9;
+    border-radius: 5px;
+}
+
+div.topic[data-theme="dark"] {
+    foreground-color: #a6a6a6;
+    border-radius: 5px;
+}
+/*
+code.literal {
+    color: #404040 !important;  dark grey 
+    background-color: #fbfbfb !important;  pale grey 
+}
+*/
+
+/* #eeffcc */
+div.code[data-theme="light"] {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+div.code[data-theme="dark"] {
+    background-color: #0f0f0f;
+    border-radius: 5px;
+}
+
+.highlight-data[data-theme="light"] {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.highlight-data[data-theme="dark"] {
+    background-color: #0f0f0f;
+    border-radius: 5px;
+}
+
+.pre[data-theme="light"] {
+    font-weight: bolder;
+    color: #b70c2f;
+    font-size: 16px;
+}
+
+.pre[data-theme="dark"] {
+    font-weight: bolder;
+    color: #ff95b8;
+    font-size: 16px;
+}
+
+div.sidebar {
+    border-radius: 5px;
+    background-color: #f0f8ff;
+}
+
+div.highlight {
+    background-color: #d2ffc4;
+    border-radius: 5px;
+}
+
+div.body p.caption {
+    font-size: 1.2em;
+}
+
+div.sphinxsidebarwrapper p.caption {
+    font-size: 1.4em;
+}
+
+div.sphinxsidebarwrapper ul {
+    font-size: 0.8em;
+    padding-left: 1em;
+}
+
+a:link {
+    color: #7787d2;
+    hover: #4b61aa;
+}
+
+table.align-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* color 89323A; */
+p.logo__title {
+    font-size: 30px;
+    color: #ff073a;
+    text-shadow: 0 0 3px #ccff02;
+}
+
+.bd-sidebar-primary {
+    width: 20%;
+}
+
+.bd-sidebar-secondary {
+    width: 20%;
+}
+
+.bd-main .bd-content .bd-article-container {
+    max-width: 100%; /* default is 60em */
+}
+
+.bd-page-width {
+    max-width: 100%; /* default is 88rem */
+}
+
+/*
+html_theme_options = {
+   "logo": {
+      "text": "Adam's Ale",
+      "image_light": 'bigbenc.avif',
+      "image_dark": "bigbencneon.avif",
+   }
+}  
+ */

@@ -1,0 +1,29 @@
+cwebp -q 50 -m 6 -af -f 50 -sharpness 0 -mt -v -progress source_img.jpg -o converted.webp
+
+# Copy this file to any directory containing images & then run this script in powershell
+# Get all png images in the current directory & convert it to webp format
+$images = Get-ChildItem -Path (Get-Location) -Filter *.jpg
+foreach ($image in $images) {
+  $fileName = $image.DirectoryName + "\" + $image.BaseName + ".webp"
+  cwebp.exe -q 80 $image.FullName -o $fileName
+}
+
+cwebp infile.png -o outfile.webp
+# This converts the png file to webp using the defaults.
+
+cwebp -resize 800 0 infile.png -o outfile.webp
+# This resizes the webp file to a maximum width of 800 
+# with 0 indicating “maintain the aspect ratio for the height”.
+
+# cmd
+cwebp -q 50 -m 6 -af -f 50 -sharpness 0 -mt -v -progress source_img.jpg -o converted.webp
+
+# using magick
+# https://imagemagick.org/script/mogrify.php commands
+
+magick mogrify -format webp *.jpg *.png
+
+magick mogrify -format avif *.jpg *.png
+magick mogrify -format avif *.png
+
+magick input.png output.avif

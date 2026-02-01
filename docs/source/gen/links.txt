@@ -1,0 +1,117 @@
+Some of the trickier parts of tkinter.ttk
+-----------------------------------------
+    
+.. raw:: html
+   :file: ../_static/odds.html
+   
+    
+
+Creating your own theme using Style. 
+------------------------------------
+    
+.. raw:: html
+   
+   <head>
+    <link href="../_static/css/frothy.css" rel="stylesheet" />
+   </head>  
+
+   <body>
+    <figure class="image-block">
+      <h1>Putting on the Style</h1>
+      <img src="../_static/bigben.avif" alt="" />
+      <figcaption>
+        <h3>ttk can look cool</h3>
+        <p>Basics, Simple Style, Style with State, Images, Roll your own, Blue Sky, Down to Earth, Replication, Lime Theme.</p>
+        <button onclick="location.href='https://tkinterttkstyle.readthedocs.io/en/latest/index.html'"  
+         type="button"> Putting on the Style >> </button>
+      </figcaption>
+    </figure>
+   </body>  
+
+Linking Python to Arduino
+-------------------------
+
+.. raw:: html
+   
+   <head>
+    <link href="../_static/css/frothy.css" rel="stylesheet" />
+   </head>  
+
+   <body>
+    <figure class="image-block">
+      <h1>Electronic Python</h1>
+      <img src="../_static/bigben.avif" alt="" />
+      <figcaption>
+        <h3>Linking Python to Arduino</h3>
+        <p> Arduino and Python Fundamentals, VPython, Create a Dial Gauge</p>
+        <button onclick="location.href='https://electronic-python.readthedocs.io/en/latest/index.html'"  
+         type="button"> Electronic Python >> </button>
+      </figcaption>
+    </figure>
+   </body>
+
+Adding dimensions to PIL
+------------------------
+
+.. raw:: html
+   
+   <head>
+    <link href="../_static/css/frothy.css" rel="stylesheet" />
+   </head>  
+
+   <body>
+    <figure class="image-block">
+      <h1>Dimensions in PIL</h1>
+      <img src="../_static/bigbenneon.avif" alt="" />
+      <figcaption>
+        <h3>A Whole New Dimension</h3>
+        <p>Dimensions, Dashed Lines, Rasterisation, Anialiased Dimensions.</p>
+        <button onclick="location.href='https://pil-dimensions.readthedocs.io/en/latest/index.html'"  
+         type="button"> Dimensions in PIL >> </button>
+      </figcaption>
+    </figure>
+   </body>
+
+Iterative Solutions
+-------------------
+
+.. raw:: html
+   
+   <head>
+    <link href="../_static/css/frothy.css" rel="stylesheet" />
+   </head>  
+
+   <body>
+    <figure class="image-block">
+      <h1>Pesky Imps</h1>
+      <img src="../_static/bigbenneon.avif" alt="" />
+      <figcaption>
+        <h3>Iterative Solutions</h3>
+        <p>Interpolation, Extrapolation, Equation Roots, and Optimisation .</p>
+        <button onclick="location.href='https://pesky-imps.readthedocs.io/en/latest/index.html'"  
+         type="button"> Pesky Imps >> </button>
+      </figcaption>
+    </figure>
+   </body>
+
+Pandas Dataframe
+----------------
+
+.. raw:: html
+   
+   <head>
+    <link href="../_static/css/frothy.css" rel="stylesheet" />
+   </head>  
+
+   <body>
+    <figure class="image-block">
+      <h1>Framed!</h1>
+      <img src="../_static/bigben.avif" alt="" />
+      <figcaption>
+        <h3>Using Pandas Dataframe</h3>
+        <p>Inroduction, Using Pandas, Loading Data, Data Manipulation, Cleaning Data, Visualistion, Saving Data.</p>
+        <button onclick="location.href='https://frameyourdata.readthedocs.io/en/latest/index.html'"  
+         type="button"> Framed! >> </button>
+      </figcaption>
+    </figure>
+   </body>

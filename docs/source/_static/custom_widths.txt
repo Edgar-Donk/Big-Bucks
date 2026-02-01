@@ -1,0 +1,52 @@
+Horizontal spacing
+
+By default, the theme's three columns have fixed widths. The primary sidebar will snap to the left, the 
+secondary sidebar will snap to the right, and the article content will be centered in between.
+
+    If one of the sidebars is not present, then the article content will be centered between the other 
+	sidebar and the side of the page.
+    If neither sidebar is present, the article content will be in the middle of the page.
+
+If you'd like the article content to take up more width than its default, use the max-width CSS property 
+with the following selectors:
+
+.bd-main .bd-content .bd-article-container {
+  max-width: 100%;  /* default is 60em */
+}
+
+The above rule will set the article content max width to the same width as the top navigation bar. To 
+truly use all of the available page width, you also need to set the following CSS rule:
+
+.bd-page-width {
+  max-width: 100%;  /* default is 88rem */
+}
+
+This will affect both the article content and the top navigation bar.
+
+Note
+
+If you use both of the custom CSS rules above, be sure to keep them as separate rules in your CSS file. 
+If you combine them, the result will be a CSS selector that is less specific than the two default rules 
+in the theme, and your custom CSS will fail to override the theme defaults.
+
+to make css file work ensure have valid css directory and valid config.py
+where the css file is
+
+html_static_path = ['_static']
+html_css_files = [
+    'css/custom.css',
+]
+
+.bd-sidebar-primary {
+	width: 20%;
+}
+
+.bd-sidebar-secondary {
+	width: 15%;
+}
+
+left (primary) was 31%
+right 26%
+main 48%
+
+--> 20% 65% 15%
