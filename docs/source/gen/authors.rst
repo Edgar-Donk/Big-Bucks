@@ -21,16 +21,16 @@ long.
 Repository
 ==========
 
-You should find all the python examples here.
+You should find all the python scripts here.
 
-`adam! <https://github.com/Edgar-Donk/Adams_Ale>`_
+`<https://github.com/Edgar-Donk/Big-Bucks>`_
 
 Read the Docs
 =============
 
 Where you'll find the explanations.
 
-`Read the Docs <https://adams-ale.readthedocs.io/en/latest/index.html>`_
+`Read the Docs <https://big-bucks.readthedocs.io/en/latest/index.html>`_
 
 More
 ====
