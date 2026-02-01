@@ -7,7 +7,7 @@ a simple solution is to switch to Polars. It is built to deliver answers from la
 
 ## See the working copy
 
-[Read the Docs](https://adams-ale.readthedocs.io/en/latest/index.html)
+[Read the Docs](https://big-bucks.readthedocs.io/en/latest/index.html)
 
 1. Using Polars
     * Using Polars for EDA
