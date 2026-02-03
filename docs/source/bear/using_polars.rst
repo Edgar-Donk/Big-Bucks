@@ -547,7 +547,7 @@ information to be able to retain the rows.
 
 The majority of the dataframe is still unknown. This is where visualisation can help. 
 *State/Province* and *Country* both seem complete, and we know that *Longitude* 
-and *Latitude* sre now complete.
+and *Latitude* are now complete.
 
 Visualisation
 =============
@@ -856,7 +856,7 @@ London boroughs::
    │           ┆           ┆ Arcade    ┆           ┆   ┆           ┆           ┆           ┆          │
    └───────────┴───────────┴───────────┴───────────┴───┴───────────┴───────────┴───────────┴──────────┘
    
-Note that we added `'Country') == 'GB'` to ensure that no other London is included. `
+Note that we added `('Country') == 'GB'` to ensure that no other London is included. `
 We should be able to show 195 points on a London map.
  
 .. altair-plot::
@@ -907,7 +907,7 @@ but maybe within the boroughs map.
 
 First Victoria Station needs new coordinates and Stanstead airport can be dropped.
 Victoria Station's existing coordinates put it well away from other coordinates, so
-update using a *where, then, otherwise* method. Victoria Station is at Longitude -0.1441
+update using a *when, then, otherwise* method. Victoria Station is at Longitude -0.1441
 and Latitude 51.4952, a far cry from the original::
 
    df = df.with_columns(
@@ -978,8 +978,7 @@ directly in altair::
    dtypes: Float64(2), string(1)
    memory usage: 990.0 bytes 
 
-Altair have an example of using the centroids, which can be used with
-the Starbucks London locations. Note how the borough names are positioned.
+Note how the borough names are positioned.
 
 .. altair-plot::
 
@@ -1005,14 +1004,16 @@ This looks well enough, now all together.
  
 We spotted Victoria Station required new coordinates, one in 195 rows, which over
 25600 rows is probably amounting to about 130 poorly made coordinates, plus a column
-*State/Province* poorly attributed or not clearly controlled- Unfortunately we 
+*State/Province* poorly attributed or not clearly controlled. Unfortunately we 
 cannot use the *Store Number* to help, as seen on the London Starbucks, the numbers
 are probably allocated sequentially on a date basis, certainly not according to
 *Country*, *State/Province* or *City*.
 
 Empty City
-----------
+==========
 
+When we inirially looked at the data within the column *City* there were 14 
+missing data entries in *City*.
 Maybe we will be lucky and be able to find the *City* from the empty *City* - 
 anyway worth a look::
 
@@ -1189,7 +1190,7 @@ American standards::
 
 We have 29 outlets attributed to RI (Rhode Island) in the USA, let's see how they plot
 on a map, there was no altair map at a large enough scale so we imported a map
-which happens to be a GeoJson type.
+which happens to be a GeoJson type. Hover over the points.
 
 .. altair-plot::
 
@@ -1226,6 +1227,9 @@ which happens to be a GeoJson type.
 You should see a blank map with three points, the two on the right are obviously
 from somewhere else - the coordinates are nowhere near Rhode Island - they both 
 come from Batam in Indonesia in the Riau Islands - hence the RI State.
+
+Because there were do few points it was perfectly alright to use all the columns -
+hence the large tooltip.
 
 The third is at the Rhode Island TF Green Int'l Airport, which should be alright.
 We can restrict the Rhode Island selection by adding the US as the country.
