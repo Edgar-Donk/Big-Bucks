@@ -6,7 +6,7 @@ altair
 numpy
 pydata_sphinx_theme
 sphinx-copybutton
-sphinxext_altair.altairplot
+sphinxext-altair
 sphinx.ext.autodoc
 sphinx.ext.autosectionlabel
 sphinx_togglebutton
