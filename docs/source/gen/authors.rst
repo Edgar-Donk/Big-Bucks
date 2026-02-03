@@ -238,4 +238,31 @@ Flask
 
 :AL:`Leather Bottle`
 
-Create web pages, control with python, run with Flask server   
+Create web pages, control with python, run with Flask server 
+
+Water Properties
+----------------
+
+.. _ale: https://adams-ale.readthedocs.io/en/latest/index.html
+
+.. image:: ../_static/bigben.avif
+   :width: 200
+   :height: 196
+   :align: left 
+   :target: froth_
+   :class: only-light
+
+.. image:: ../_static/bigbenneon.avif
+   :width: 200
+   :height: 196
+   :align: left 
+   :target: froth_
+   :class: only-dark
+
+|
+
+:AL:`Adam's Ale` 
+
+Simplified but accurate water properties with interactive altair plots.
+
+  
