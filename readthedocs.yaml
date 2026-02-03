@@ -1,9 +1,10 @@
 version: 2
 
+# required for altair.plot
 build:
   os: ubuntu-lts-latest
   tools:
-    python: "3.12"
+    python: "3.10"
 
 python:
   install:
