@@ -11,3 +11,4 @@ sphinxext-altair
 # sphinx.ext.autosectionlabel
 sphinx_togglebutton
 urllib3<2
+matplotlib
