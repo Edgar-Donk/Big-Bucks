@@ -7,7 +7,7 @@ numpy
 pydata_sphinx_theme
 sphinx-copybutton
 sphinxext-altair
-sphinx.ext.autodoc
-sphinx.ext.autosectionlabel
+# sphinx.ext.autodoc
+# sphinx.ext.autosectionlabel
 sphinx_togglebutton
 urllib3<2
