@@ -12,16 +12,26 @@ a simple solution is to switch to Polars. It is built to deliver answers from la
 1. Using Polars
    
    * Using Polars for EDA
+   
    * Install Polars
+   
    * Lazy and Eager Loading
+   
    * Data Cleaning
-   . Visualisation with Altair
+     . Visualisation with Altair
      
          Working on the Starbucks Location dataframe
+     
      * World Locations
+       
+       ![starbucks locations worldwide](./docs/source/images/starbucks.png)
+     
      * London Starbucks
+     
      * Rhode Island Starbucks
+     
      * Egypt Starbucks
+     
      * Belgium Starbucks
 
 2. General
